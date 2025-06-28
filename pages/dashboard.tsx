@@ -56,11 +56,12 @@ const summarizeResult = async () => {
       
       <input
         type="text"
-        className="w-full max-w-md p-3 rounded text-black"
+        className="w-full max-w-md p-3 rounded bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
         placeholder="Enter a topic (e.g., Photosynthesis)"
         value={topic}
         onChange={(e) => setTopic(e.target.value)}
       />
+
       <button
         onClick={getExplanation}
         disabled={loading || !topic}
