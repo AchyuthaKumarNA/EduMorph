@@ -52,7 +52,6 @@ const summarizeResult = async () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center px-4 py-10">
       <h1 className="text-4xl font-bold mb-6">📚 EduMorph Dashboard</h1>
-      <Link href="/" className="text-blue-400 mb-4 underline">← Back to Home</Link>
       
       <input
         type="text"
