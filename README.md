@@ -1,40 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+Sure! Below is your full README text in plain format — with **no markdown symbols** so you can copy-paste it directly into any text editor or GitHub without issues.
 
-## Getting Started
+---
 
-First, run the development server:
+EduMorph — Personalized AI-Powered Learning App
 
-```bash
+EduMorph is an AI-powered web app that creates personalized learning content based on any topic the user enters. It uses cutting-edge language models like Groq and Gemini to generate beginner-friendly explanations and structured study plans.
+
+Live App: https://edu-morph-eta.vercel.app/
+
+Features
+
+* Generate AI Explanations using Groq LLM
+* Create Personalized Study Plans via Gemini 2.0 Flash
+* Responsive UI built with Next.js and Tailwind CSS
+* Dark theme with high-contrast input styling
+* Firebase login-ready (optional future add-on)
+
+Tech Stack
+
+Frontend: Next.js (TypeScript), Tailwind CSS
+AI/LLMs: Groq, Gemini (Google AI Studio)
+API Layer: Next.js API Routes (Serverless)
+Deployment: Vercel + GitHub Integration
+
+How It Works
+
+1. User enters a topic (e.g., "Photosynthesis")
+2. Clicks “Get AI Explanation” → Groq responds with a beginner-level description
+3. Clicks “Generate Study Plan” → Gemini creates a week-by-week plan to master the topic
+
+Project Structure
+
+/pages
+index.tsx         → Redirects to dashboard
+dashboard.tsx     → Main user interface
+/api
+gemini.ts       → Google Gemini integration
+groq.ts         → Groq LLM integration
+
+/public
+favicon.ico
+
+/styles
+globals.css
+
+.env.local (not committed)
+
+Getting Started Locally
+
+1. Clone the repository:
+
+git clone [https://github.com/your-username/edumorph.git](https://github.com/your-username/edumorph.git)
+cd edumorph
+
+2. Install dependencies:
+
+npm install
+
+3. Set up environment variables:
+
+Create a `.env.local` file and add:
+
+GEMINI\_API\_KEY=your\_google\_ai\_studio\_key
+
+(Make sure your Gemini key uses gemini-2.0-flash)
+
+4. Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Deployment on Vercel
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+This project is deployed using Vercel.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+1. Connect your GitHub repo at [https://vercel.com/import/git](https://vercel.com/import/git)
+2. Add environment variable:
+   GEMINI\_API\_KEY
+3. Click Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Every push to GitHub auto-triggers a redeploy.
 
-## Learn More
+Future Roadmap
 
-To learn more about Next.js, take a look at the following resources:
+* Google Sign-in with Firebase
+* AI-based quiz generation from study plans
+* Editable and savable study journal
+* Analytics dashboard for user progress
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is open-source and available under the MIT License.
 
-## Deploy on Vercel
+Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Groq
+* Google Gemini
+* Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
