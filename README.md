@@ -1,7 +1,3 @@
-Sure! Below is your full README text in plain format — with **no markdown symbols** so you can copy-paste it directly into any text editor or GitHub without issues.
-
----
-
 EduMorph — Personalized AI-Powered Learning App
 
 EduMorph is an AI-powered web app that creates personalized learning content based on any topic the user enters. It uses cutting-edge language models like Groq and Gemini to generate beginner-friendly explanations and structured study plans.
@@ -99,5 +95,4 @@ Acknowledgments
 * Google Gemini
 * Vercel
 
----
 
